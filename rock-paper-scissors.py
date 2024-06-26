@@ -2,10 +2,11 @@
 # By: Ashley Meza
 
 import random
-# rps = ["rock", "paper", "scissors"]
+rps = ["rock", "paper", "scissors"]
 
 player1_choice = input("Make your choice, Rock, paper or scissors: ")
-player2_choice = input("Make your choice, Rock, paper, or scissors: ") #random.choice(rps)
+player2_choice = random.choice(rps)
+print(f"Player 2 chose {player2_choice}")
 
 if player1_choice == "rock":
     if player2_choice == "scissors":
